@@ -1,0 +1,120 @@
+body, html {
+    background-color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#wrapper {
+    width: 8.5in;
+    background-color: white;
+    margin: auto;
+    padding: 0.25in
+}
+
+.sec {
+    clear: both;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+/* TODO: Better page break management, this is okay for now but could be more automatic when sections get longer */
+@media print {
+    @page { margin: 0; } /* Hide header/footer */
+    .sec {page-break-inside: avoid;}
+}
+
+/* Header */
+header {
+    text-align: center;
+}
+
+header p {
+    margin: 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+h1, h2 {
+    /* color: #0957C3;
+    border-color: 0957C3; */
+    border-color: black;
+}
+
+/* General Resume Content */
+
+h2, h3, p {
+    display: block;
+    margin: 0;
+}
+
+h2 {
+    width: 100%;
+    border-bottom: solid 2px;
+    padding: 0;
+    margin-bottom: 10px;
+    padding-top: 25px;
+}
+
+img {
+    width: 0.75in;
+    margin-right: 0.1in;
+}
+
+.imgBlock {
+    height: 100%;
+}
+
+.content-float-l {
+    float: left;
+}
+
+.content-float-r {
+    float: right;
+    text-align: right;
+}
+
+/* Education */
+
+/* Work Item */
+.workItem, .eduItem {
+    clear: both;
+    display: block;
+}
+
+.jobDesc {
+    margin: -29px 0 10px 78px;
+    padding-left: 22px;
+    clear:both;
+}
+
+/* Projects */
+.project {
+    width: 2in;
+    text-align: center;
+    padding: 4px;
+    margin: 2px;
+    height: 100%;
+}
+
+.project h2 {
+
+}
+
+.projectRow {
+    width: 100%;
+    height: auto;
+    clear: both;
+}
