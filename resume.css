@@ -7,7 +7,7 @@ body, html {
     width: 7.0in;
     background-color: white;
     margin: auto;
-    padding: 0.25in;
+    padding: 0.1in 0.25in;
 }
 
 .sec {
@@ -42,14 +42,17 @@ ul {
         background-color: white !important;
     }
 
+    /*
     img {
         visibility: hidden;
         display: none;
     }
 
+
     .jobDesc {
         margin: 0 !important;
     }
+    */
 }
 
 /* Header */
@@ -78,11 +81,12 @@ h2, h3, p {
     margin: 0;
 }
 
-h2, h3 {
+h2 {
     font-size: 13pt;
 }
 
 h3 {
+    font-size: 11pt;
 }
 
 h2 {
@@ -99,7 +103,7 @@ img {
     margin-right: 0.1in;
 }
 
-p {
+p, li {
     font-size: 11pt;
 }
 
@@ -151,4 +155,8 @@ p {
     width: 100%;
     height: auto;
     clear: both;
+}
+
+.listBump {
+    padding-left: 25px;
 }
