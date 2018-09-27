@@ -4,10 +4,10 @@ body, html {
 }
 
 #wrapper {
-    width: 8.5in;
+    width: 7.0in;
     background-color: white;
     margin: auto;
-    padding: 0.25in
+    padding: 0.25in;
 }
 
 .sec {
@@ -30,8 +30,26 @@ ul {
 
 /* TODO: Better page break management, this is okay for now but could be more automatic when sections get longer */
 @media print {
-    @page { margin: 0; } /* Hide header/footer */
-    .sec {page-break-inside: avoid;}
+    @page { /* Hide header/footer */
+        margin: 0;
+    }
+
+    .sec {
+        page-break-inside: avoid;
+    }
+
+    body, html {
+        background-color: white !important;
+    }
+
+    img {
+        visibility: hidden;
+        display: none;
+    }
+
+    .jobDesc {
+        margin: 0 !important;
+    }
 }
 
 /* Header */
@@ -60,17 +78,29 @@ h2, h3, p {
     margin: 0;
 }
 
+h2, h3 {
+    font-size: 13pt;
+}
+
+h3 {
+}
+
 h2 {
     width: 100%;
     border-bottom: solid 2px;
     padding: 0;
-    margin-bottom: 10px;
-    padding-top: 25px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+    font-weight: bolder;
 }
 
 img {
     width: 0.75in;
     margin-right: 0.1in;
+}
+
+p {
+    font-size: 11pt;
 }
 
 .imgBlock {
@@ -100,9 +130,13 @@ img {
     clear:both;
 }
 
+.company {
+    font-style: italic;
+}
+
 /* Projects */
 .project {
-    width: 2in;
+    width: 1.62in;
     text-align: center;
     padding: 4px;
     margin: 2px;
