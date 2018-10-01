@@ -98,8 +98,8 @@ h2 {
     font-weight: bolder;
 }
 
-img {
-    width: 0.75in;
+img, .imgPlaceholder {
+    width: 0.4in;
     margin-right: 0.1in;
 }
 
@@ -129,7 +129,7 @@ p, li {
 }
 
 .jobDesc {
-    margin: -29px 0 10px 78px;
+    margin: 0px 0 10px 40px;
     padding-left: 22px;
     clear:both;
 }
