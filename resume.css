@@ -34,12 +34,17 @@ ul {
         margin: 0;
     }
 
-    .sec {
-        page-break-inside: avoid;
+    .dontBreak {
+        page-break-before: always;
     }
 
     body, html {
         background-color: white !important;
+        margin-top: .2in !important;
+    }
+
+    #wrapper {
+        padding-top: 0 !important;
     }
 
     /*
@@ -68,21 +73,12 @@ header h1 {
     margin: 0;
 }
 
-h1, h2 {
-    /* color: #0957C3;
-    border-color: 0957C3; */
-    border-color: black;
-}
-
 /* General Resume Content */
 
 h2, h3, p {
     display: block;
+    width: 100%;
     margin: 0;
-}
-
-h2 {
-    font-size: 13pt;
 }
 
 h3 {
@@ -90,12 +86,15 @@ h3 {
 }
 
 h2 {
+    font-size: 13pt;
+    border-color: black;
     width: 100%;
     border-bottom: solid 2px;
     padding: 0;
     margin-bottom: 5px;
-    padding-top: 20px;
+    padding-top: 10px;
     font-weight: bolder;
+    clear: both;
 }
 
 img, .imgPlaceholder {
@@ -131,7 +130,7 @@ p, li {
 .jobDesc {
     margin: 0 0 10px 40px;
     padding-left: 22px;
-    clear:both;
+    clear: both;
 }
 
 .company {
@@ -159,4 +158,5 @@ p, li {
 
 .listBump {
     padding-left: 25px;
+    margin: 0;
 }
