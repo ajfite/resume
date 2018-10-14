@@ -1,0 +1,14 @@
+stages:
+  - deploy
+    
+build:
+  stage: deploy
+  
+  script:
+    - rm -rf /www/ajfite.com/projects/resume/*
+    - cp index.html /www/ajfite.com/projects/resume/
+    - cp resume.css /www/ajfite.com/projects/resume/
+    - cp -r images/ /www/ajfite.com/projects/resume/
+
+  tags:
+    - fremont
