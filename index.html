@@ -1,251 +1,132 @@
 <!DOCTYPE html>
-<!--
-(C) Copyright 2018-2020 AJ Fite, All rights Reserved
-Licensed under CC-BY-NC-SA 4.0
-Source and License: https://git.nclf.net/ajfite/resume
-Resume last updated October 14, 2018
--->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>A.J. Fite | Resume</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="resume.css"/>
+    <link href="resume2.css" rel="stylesheet" />
 </head>
 <body>
-<div id="wrapper">
-    <header class="sec">
-        <h1>A.J. Fite</h1>
-        <p class="address">PO Box 3307 &bull; Renton, WA &bull; 98056</p>
-        <p class="contact">(425) 610-9574 &bull; <a href="mailto:me@ajfite.com">me@ajfite.com</a> &bull; <a
-                href="https://ajfite.com">www.ajfite.com</a></p>
-    </header>
+    <div id="page1" class="page">
+        <div class="infobox">
+            <img class="profileImg" src="images/profile.jpg" alt="Picture of AJ Fite"/>
+            <span class="title name">A.J. Fite</span>
+            Software Engineer
+            <address class="contactContainer">
+                <div><a href="https://ajfite.com"><img src="svg/globe.svg" alt="website"/></a></div>
+                <div><a href="https://ajfite.com">ajfite.com</a></div>
 
-    <div id="summary" class="sec">
-        <h2>Summary</h2>
-        <p>I am a Boeing Software Engineer and Alum of Cal Poly San Luis Obispo.</p>
-    </div>
+                <div><a href="mailto:me@ajfite.com"><img src="svg/email.svg" alt="email"/></a></div>
+                <div><a href="mailto:me@ajfite.com">me@ajfite.com</a></div>
 
-    <div id="education" class="sec">
-        <h2>Education</h2>
-        <div class="eduItem">
-            <img class="content-float-l" src="images/calpoly.svg" alt="Cal Poly Seal"/>
-            <div class="content-float-l">
-                <h3>B.S. Computer Engineering</h3>
-                <p>California Polytechnic State University</p>
-            </div>
-            <div class="content-float-r">
-                <p>December 2018</p>
-                <p>San Luis Obispo, CA</p>
-            </div>
-        </div>
-    </div>
+                <div><a href="https://twitter.com/ajfite"><img src="svg/twitter.svg" alt="Twitter"/></a></div>
+                <div><a href="https://twitter.com/ajfite">@ajfite</a></div>
 
-    <div id="professionalSkills" class="sec">
-        <h2>Professional Skills</h2>
-        <p>
-            Programming Languages: C, C++, SQL, Java, PHP, Visual Basic, HTML/CSS, Swift, VHDL, Bash, Python<br />
-            Systems and Software: Various CI tools, Maven, Aircraft software<br />
-            Environments: Embedded Systems, Linux (Primarily Arch, Ubuntu, Debian), Windows/Windows Server, iOS
-        </p>
-    </div>
+                <div><a href="https://linkedin.com/in/ajfite"><img src="svg/linkedin.svg" alt="LinkedIn"/></a></div>
+                <div><a href="https://linkedin.com/in/ajfite">ajfite</a></div>
 
-    <div id="workExperience" class="sec">
-        <h2>Work Experience</h2>
-        <div class="workItem" id="Boeing">
-           
-           <div class="content-float-l"><img src="images/boeing.png"
-                                                       alt="Boeing Logo"/></div>
-            <div class="content-float-l">
-                <h3 class="position">Software Engineer 1</h3>
-                <p class="company">Boeing</p>
-            </div>
-            <div class="content-float-r">
-                <p class="dateRange">February 2019-Present</p>
-                <p class="city">Kent, WA</p>
-            </div>
-            <ul class="jobDesc content-float-l">
-		    <li>P-8 Poseidon Mission System team</li>
-		    <li>Primarily working on comms software for the P-8 Poseidon</li>
-            </ul>
-        </div>
-        <div class="workItem" id="SDI">
-            <div class="content-float-l"><img src="images/scientificdrilling.png"
-                                                       alt="Scientific Drilling Logo"/></div>
-            <div class="content-float-l">
-                <h3 class="position">Systems Verification QA Intern</h3>
-                <p class="company">Scientific Drilling</p>
-            </div>
-            <div class="content-float-r">
-                <p class="dateRange">April 2018 &mdash; December 2018</p>
-                <p class="city">Paso Robles, CA</p>
-            </div>
-            <ul class="jobDesc content-float-l">
-                <li>Verified firmware and software fixes manually and with TestComplete automation</li>
-                <li>Wrote new tests to meet needs for new verifications and rewrote old tests</li>
-                <li>One of two subject matter experts in version control on the team</li>
-                <li>Part of the core team rolling out new source control, continuous integration, and test automation procedures</li>
-            </ul>
+                <div><img src="svg/phone.svg" alt="Phone"/></div>
+                <div>425 610 9574</div>
+
+                <div><img src="svg/location.svg" alt="Address"/></div>
+                <div>P.O. Box 3307<br />Renton, WA 98056</div>
+            </address>
         </div>
 
-        <div class="workItem" id="TransUnion">
-            <img class="content-float-l" src="images/transunion.png" alt="TransUnion Logo"/>
-            <div class="content-float-l">
-                <h3 class="position">IT Intern</h3>
-                <p class="company">TransUnion Interactive</p>
-            </div>
-            <div class="content-float-r">
-                <p class="dateRange">June 2016 &mdash; June 2017</p>
-                <p class="city">San Luis Obispo, CA</p>
-            </div>
-            <ul class="jobDesc content-float-l">
-                <li>Part of a team of four responsible for end user support of 1400+ employees located across multiple
-                    countries
-                </li>
-                <li>Managed Windows and OS X laptop and desktop computers in person and remotely</li>
-                <li>Managed 3000+ virtual machines on VMWare's ESXi platform and VCenter, including imaging, setting
-                    up, and end user support
-                </li>
-                <li>Deployed software and group policy on Windows machines via SDDM</li>
-                <li>Deployed software and managed OS X machines using Absolute Manage</li>
-                <li>I had a high rate of ticket closure and low reopening rate, closing as many tickets as other full
-                    time members of the team consistently</li>
-            </ul>
-        </div>
+        <div class="mainResume">
+            <section id="summary">
+                <h1 class="title">Summary</h1>
+                <p class="infoboxBump">I am a Boeing Software Engineer on the P-8 Poseidon Mission System Comms Team and Alumni of Cal Poly San Luis Obispo.</p>
+            </section>
 
-        <div class="workItem">
-            <img class="content-float-l" src="images/homedepot.svg" alt="Home Depot logo"/>
-            <div class="content-float-l">
-                <h3 class="position">Lot Tech/Cashier</h3>
-                <p class="company">The Home Depot</p>
-            </div>
-            <div class="content-float-r">
-                <p class="dateRange">October 2015 &mdash; June 2016</p>
-                <p class="city">San Luis Obispo, CA</p>
-            </div>
-            <ul class="jobDesc content-float-l"></ul>
-        </div>
+            <section id="experience">
+                <h1 class="title">Experience</h1>
+                <div class="expContainer">
+                    <div class="jobTitle title">Software Engineer 1</div>
+                    <div class="time">Feburary 2019 - Present</div>
+                    <div class="company">Boeing Defense, Space, and Security</div>
+                    <div class="jobLoc">Kent, WA</div>
+                    <div class="jobDesc">
+                        <ul>
+                            <li>Mission Systems Communications for the P-8 Poseidon</li>
+                            <li>Working primarily with Java and C++</li>
+                            <li>Security Clearance since 2019</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="expContainer">
+                    <div class="jobTitle title">QA Intern</div>
+                    <div class="time">April 2018 - December 2018</div>
+                    <div class="company">Scientific Drilling International</div>
+                    <div class="jobLoc">Paso Robles, CA</div>
+                    <div class="jobDesc">
+                        <ul>
+                            <li>Wrote TestComplete programs to verify firmware fixes</li>
+                            <li>One of two subject matter experts on git and GitLab on the team</li>
+                            <li>Part of the core team rolling out source control, CI, and test automation procedures</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="expContainer">
+                    <div class="jobTitle title">IT Intern</div>
+                    <div class="time">June 2016 - June 2017</div>
+                    <div class="company">TransUnion Interactive</div>
+                    <div class="jobLoc">San Luis Obispo, CA</div>
+                    <div class="jobDesc">Did things</div>
+                </div>
+                <div class="expContainer">
+                    <div class="jobTitle title">Cashier/Returns/Lot Tech</div>
+                    <div class="time">October 2015 - June 2016</div>
+                    <div class="company">The Home Depot</div>
+                    <div class="jobLoc">San Luis Obispo, CA</div>
+                    <div class="jobDesc"></div>
+                </div>
+                <div class="expContainer">
+                    <div class="jobTitle title">Marketing Automation Intern</div>
+                    <div class="time">April 2014 - September 2014</div>
+                    <div class="company">Sesame Communications</div>
+                    <div class="jobLoc">Seattle, WA</div>
+                    <div class="jobDesc"></div>
+                </div>
+                <div class="expContainer">
+                    <div class="jobTitle title">HR Technology Intern</div>
+                    <div class="time">June 2013 - September 2013</div>
+                    <div class="company">Sesame Communications</div>
+                    <div class="jobLoc">Seattle, WA</div>
+                    <div class="jobDesc"></div>
+                </div>
+            </section>
 
-        <div class="workItem">
-            <img class="content-float-l" src="images/sesame.png" alt="Sesame logo"/>
-            <div class="content-float-l">
-                <h3 class="position">Marketing Automation Intern</h3>
-                <p class="company">Sesame Communications</p>
-            </div>
-            <div class="content-float-r">
-                <p class="dateRange">April 2014 &mdash; September 2014</p>
-                <p class="city">Seattle, WA</p>
-            </div>
-            <ul class="jobDesc content-float-l">
-            </ul>
-        </div>
+            <section id="education">
+                <h1 class="title">Education</h1>
+                <img src="images/calpolyshield.png" alt="Cal Poly Seal" />
+                <div class="jobTitle eduTitle title">B.S. Computer Engineering</div>
+                <div class="time">December 2018</div>
+                <div class="eduSub company">California Polytechnic State University, San Luis Obispo</div>
+                <div class="jobDesc"></div>
+            </section>
 
-        <div class="workItem">
-            <img class="content-float-l" src="images/sesame.png" alt="Sesame logo"/>
-            <div class="content-float-l">
-                <h3 class="position">Human Resources Technology Intern</h3>
-                <p class="company">Sesame Communications</p>
-            </div>
-            <div class="content-float-r">
-                <p class="dateRange">June 2013 &mdash; September 2013</p>
-                <p class="city">Seattle, WA</p>
-            </div>
-            <ul class="jobDesc content-float-l">
-            </ul>
-        </div>
-
-        <!-- Resume too long, saved here for future JavaScript improvement to allow showing hidden items
-        <div class="workItem">
-            <img class="content-float-l" src="images/littleleague.jpg" alt="Little League Logo" />
-            <div class="content-float-l">
-                <h3 class="position">Umpire</h3>
-                <p class="company">Issaquah Little League</p>
-            </div>
-            <div class="content-float-r">
-                <p class="dateRange">January 2009 &mdash; September 2011</p>
-                <p class="city">Issaquah, WA</p>
-            </div>
-        </div>
-        -->
-    </div>
-    <div id="projects" class="sec dontBreak">
-        <h2>Personal and Academic Projects</h2>
-        <div class="projectRow">
-            <div class="project content-float-l">
-                <h3>Solar Micro-Forecasting</h3>
-                <p>My senior project, using computer imaging to predict near term cloud cover at solar facilities.</p>
-            </div>
-            <div class="project content-float-l">
-                <h3>Remote Telemetry Station</h3>
-                <p>My CPE 329 final project, a device that uses the TI MSP432 and custom C code to interface with a
-                    variety of sensors and report on environmental conditions.</p>
-            </div>
-            <div class="project content-float-l">
-                <h3>Tractor Hacking</h3>
-                <p>My Computer Engineering Capstone project, reverse engineering the communications protocol used in
-                    John
-                    Deere tractors. More information at: <a href="https://tractorhacking.github.io">tractorhacking.github.io</a>
+            <section id="skills">
+                <h1 class="title">Highlighted Skills</h1>
+                <p>
+                    Languages: Java, C++, C, Python, Bash, Powershell/.net, PHP, VHDL<br/>
+                    Systems & Software: Jenkins, GitLab, Maven, ClearCase, Git<br/>
+                    Environments: Aircraft Software, Linux, Windows, iOS, Embedded Systems
                 </p>
-            </div>
-            <div class="project content-float-l">
-                <h3>Baseball-Pi</h3>
-                <p>A Raspberry Pi Zero W based live MLB scoreboard using SPI and I2C based display modules and LEDs. A
-                    work in progress.</p>
-            </div>
-        </div>
-        <div class="projectRow">
-            <div class="project content-float-l">
-                <h3>VHDL Processor</h3>
-                <p>My CPE 233 final project, a full 8-bit processor built from the ground up on a Xilinx FPGA.</p>
-            </div>
-            <div class="project content-float-l">
-                <h3>Server Administration</h3>
-                <p>I run a large system of personal servers including VMWare ESXi virtualization, nginx web servers,
-                    a Jenkins build server, and more.</p>
-            </div>
-            <div class="project content-float-l">
-                <h3>iFixit Manual</h3>
-                <p>I worked in a 4 person team to write a professional teardown and repair manual for the Palm Treo
-                    Pro cell phone.</p>
-            </div>
+            </section>
         </div>
     </div>
-
-    <div id="clubsAndVolunteering" class="sec">
-        <h2>Clubs and Volunteering</h2>
-        <ul class="listBump">
-            <li>Office of Emergency Management Volunteer - City of Bellevue - 2018-Present</li>
-            <li>Shack Manager - Cal Poly Amateur Radio Club - 2017-2018</li>
-            <li>Radio Operator and Event Support - San Luis Obispo Bicycle Club - 2016-2018</li>
-            <li>Radio Dispatch and Event Support - Wildflower Triathlon - 2018</li>
-            <li>Volunteer - Habitat for Humanity for San Luis Obispo County - 2018</li>
-            <li>Webmaster and Social Media - Cal Poly Whovians (defunct) - 2012-2015</li>
-        </ul>
+    <div id="page2" class="page">
+        <div class="mainResume">
+            <section id="volunteering">
+                <h1 class="title">Volunteering</h1>
+                <ul>
+                    <li>Radio Support | Bellevue Office of Emergency Management | 2018 - Present</li>
+                    <li><abbr title="Community Emergency Response Team">CERT</abbr> Volunteer | City of Bellevue | 2019 - Present</li>
+                    <li>Radio Support | Renton Office of Emergency Management | 2019 - Present</li>
+                </ul>
+            </section>
+        </div>
     </div>
-
-    <div id="classes" class="sec">
-        <h2>Selected Major Coursework</h2>
-        <ul class="listBump">
-            <li>CSC 471 - Introduction to Computer Graphics (C++/OpenGL)</li>
-            <li>CPE 464 - Introduction to Computer Networks (C/C++)</li>
-            <li>CPE 453 - Introduction to Operating Systems (C)</li>
-            <li>CSC 436 - Mobile Application Development (iOS/Swift)</li>
-            <li>CSC 365 - Introduction to Database Systems (SQL/MySQL)</li>
-            <li>CPE 357 - Systems Programming (C)</li>
-            <li>CPE 350 & CPE 450 - Capstone Project (See projects section above)</li>
-            <li>CPE 329 - Programmable Logic and Microprocessor-Based Systems Design (C)</li>
-            <li>CPE 315 - Computer Architecture (C/Java/MIPS Assembly)</li>
-            <li>CPE 233 - Computer Design and Assembly Language (VHDL/Assembly)</li>
-            <li>CPE 133 - Digital Design (VHDL)</li>
-            <li>CPE 101/102/103 - Fundamentals of Computer Science (C/Java)</li>
-            <li>CPE 123 - Introduction to Computing (Racket)</li>
-            <li>EE 306 - Semiconductor Device Electronics</li>
-            <li>EE 307 - Digital Electronics and Integrated Circuits</li>
-            <li>PHIL 327 - Robot Ethics</li>
-            <li>ENGL 149 - Technical Writing</li>
-        </ul>
-    </div>
-</div>
 </body>
 </html>

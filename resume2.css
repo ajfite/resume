@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+    background-color: #424242;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+ul {
+    margin: 0;
+    padding: 0 0 0 .2in;
+}
+
+address {
+    font-style: normal;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+}
+
+#education img {
+    float: left;
+    height: 42px;
+    margin: 1px 10px 1px 0;
+}
+
+.mainResume h1 {
+    width: 67%;
+    height: 23px;
+    padding-top: 15px;
+    padding-right: 5px;
+    display: block;
+    font-size: 23px;
+    margin: 10px 0;
+    border-bottom: #71b77b solid 4px;
+}
+
+.infoboxBump {
+    margin-right: 2.4in;
+}
+
+.mainResume h1:first-of-type {
+    padding-top: 0;
+}
+
+#page1, #page2 {
+}
+
+.page {
+    height: 10in;
+    width: 7.5in;
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 0.5in;
+}
+
+.expContainer {
+    clear: left;
+    margin-top: 14px;
+}
+
+.expContainer:first-of-type {
+    margin-top: 0;
+}
+
+.jobDesc {
+    clear: left;
+    font-size: 14px;
+}
+
+.jobLoc {
+    float: right;
+    margin-right: 25px;
+    font-size:12px;
+    line-height: 14px;
+    vertical-align: middle;
+}
+
+.jobTitle {
+    font-size: 20px;
+    float: left;
+    font-weight: bold;
+}
+
+.time {
+    float: right;
+    font-size:12px;
+    margin-right: 25px;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+.company {
+    font-style: italic;
+    font-size:14px;
+
+    clear: left;
+    float:left;
+}
+
+.eduSub {
+    float: left;
+    clear: none;
+    width: 60%;
+}
+
+/* Infobox */
+
+.infobox {
+    float: right;
+    width: 1.8in;
+    background-color: #71b77b;
+    padding: 0.2in;
+    text-align: center;
+    height: 7in;
+}
+
+.profileImg {
+    width: 1.6in;
+    border-radius: 50%;
+    border: 5px black solid;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.contactContainer {
+    grid-template-columns: 30px auto;
+    display: -ms-inline-grid;
+    display: inline-grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 17px;
+}
+
+.contactContainer div {
+    height: 25px;
+}
+
+.contactContainer div img {
+    height: 100%;
+    width: 30px;
+    border: none;
+}
+
+/* Link decoration */
+
+a, a:link, a:active, a:visited {
+    color: black;
+    text-decoration: underline transparent solid;
+    transition: text-decoration 0.3s ease;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline solid currentColor;
+}
+
+/* Printer helper */
+@media print {
+    @page { /* Hide header/footer */
+        margin: 0 !important;
+    }
+
+    body, html {
+        background-color: white !important;
+        margin: 0 !important;
+    }
+
+    abbr {
+        text-decoration: none !important;
+    }
+
+    .page {
+        margin: 0 !important;
+    }
+}
+
+/* Internet Explorer compatibility (might work, not super tested, who cares) */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    a:link {
+        text-decoration: none !important;
+    }
+
+    .contactContainer {
+        -ms-grid-columns: 30px 10px auto;
+    }
+
+    .contactContainer div {
+        margin-top: 10px;
+    }
+
+    .contactContainer div:nth-child(odd) {
+        -ms-grid-column: 1;
+    }
+
+    .contactContainer div:nth-child(even) {
+        -ms-grid-column: 3;
+    }
+
+
+    .contactContainer div:nth-of-type(1) {
+        -ms-grid-row: 1;
+    }
+
+    .contactContainer div:nth-of-type(2) {
+        -ms-grid-row: 1;
+    }
+
+    .contactContainer div:nth-of-type(3) {
+        -ms-grid-row: 2;
+    }
+
+    .contactContainer div:nth-of-type(4) {
+        -ms-grid-row: 2;
+    }
+
+    .contactContainer div:nth-of-type(5) {
+        -ms-grid-row: 3;
+    }
+
+    .contactContainer div:nth-of-type(6) {
+        -ms-grid-row: 3;
+    }
+
+    .contactContainer div:nth-of-type(7) {
+        -ms-grid-row: 4;
+    }
+
+    .contactContainer div:nth-of-type(8) {
+        -ms-grid-row: 4;
+    }
+
+    .contactContainer div:nth-of-type(9) {
+        -ms-grid-row: 5;
+    }
+
+    .contactContainer div:nth-of-type(10) {
+        -ms-grid-row: 5;
+    }
+
+    .contactContainer div:nth-of-type(11) {
+        -ms-grid-row: 6;
+    }
+
+    .contactContainer div:nth-of-type(12) {
+        -ms-grid-row: 6;
+    }
+}
