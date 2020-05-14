@@ -9,6 +9,8 @@ deploy:
     - cp index.html /rootstore/wwwdata/ajfite.com/projects/resume/
     - cp resume.css /rootstore/wwwdata/ajfite.com/projects/resume/
     - cp -r images/ /rootstore/wwwdata/ajfite.com/projects/resume/
+    - cp -r svg/ /rootstore/wwwdata/ajfite.com/projects/resume/
+
 
   tags:
     - webserver
