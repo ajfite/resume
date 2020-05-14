@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
 html {
-    background-color: #424242;
+    background-color: #606060;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
@@ -54,6 +54,7 @@ address {
     background-color: #ffffff;
     margin: 20px auto;
     padding: 0.5in;
+    box-shadow: #282828 10px 10px 8px;
 }
 
 .expContainer {
@@ -110,11 +111,12 @@ address {
 
 .infobox {
     float: right;
-    width: 1.8in;
+    width: 1.7in;
     background-color: #71b77b;
     padding: 0.2in;
     text-align: center;
     height: 7in;
+    border: 5px #71b77b solid;
 }
 
 .profileImg {
@@ -165,12 +167,19 @@ a:hover {
 /* Printer helper */
 @media print {
     @page { /* Hide header/footer */
-        margin: 0 !important;
+        margin: 0;
+        padding: 0;
+        size: letter;
     }
 
     body, html {
+        width: 8.5in;
+        height: 11in;
         background-color: white !important;
+        overflow: visible;
         margin: 0 !important;
+        padding: 0;
+        display: block; /* hack for chrome */
     }
 
     abbr {
