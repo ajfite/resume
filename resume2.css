@@ -9,6 +9,7 @@ html {
 ul {
     margin: 0;
     padding: 0 0 0 .2in;
+    list-style-type: square;
 }
 
 address {
