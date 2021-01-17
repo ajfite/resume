@@ -8,12 +8,17 @@ html {
 
 ul {
     margin: 0;
-    padding: 0 0 0 .2in;
+    padding: 0 0 0 .25in;
     list-style-type: square;
 }
 
 address {
     font-style: normal;
+}
+
+p {
+	margin:0;
+	padding:0;
 }
 
 .title {
@@ -34,11 +39,7 @@ address {
     display: block;
     font-size: 23px;
     margin: 10px 0;
-    border-bottom: #71b77b solid 4px;
-}
-
-.infoboxBump {
-    margin-right: 2.4in;
+    border-bottom: #99cca1 solid 4px;
 }
 
 .mainResume h1:first-of-type {
@@ -46,6 +47,11 @@ address {
 }
 
 #page1, #page2 {
+}
+
+section {
+	clear: left;
+	padding-top:7px;
 }
 
 .page {
@@ -59,46 +65,40 @@ address {
 
 .expContainer {
     clear: left;
-    margin-top: 14px;
+	display: block;
+    padding-top: 7px;
 }
 
 .expContainer:first-of-type {
     margin-top: 0;
 }
 
+.jobLine {
+	float: left;
+	clear: left;
+	width: 5in;
+}
+
 .jobDesc {
-    clear: left;
-    font-size: 14px;
+    font-size: 12px;
 }
 
-.jobLoc {
-    float: right;
-    margin-right: 25px;
-    font-size:12px;
-    line-height: 14px;
-    vertical-align: middle;
-}
-
-.jobTitle {
-    font-size: 20px;
-    float: left;
+.title {
+    font-size: 13px;
     font-weight: bold;
 }
 
-.time {
-    float: right;
+.time, .jobLoc {
     font-size:12px;
-    margin-right: 25px;
     vertical-align: middle;
-    line-height: 20px;
+    line-height: 12px;
+	margin-left: 1em;
 }
 
 .company {
     font-style: italic;
-    font-size:14px;
-
-    clear: left;
-    float:left;
+	font-weight: bold;
+    font-size:15px;
 }
 
 .eduSub {
@@ -107,16 +107,21 @@ address {
     width: 60%;
 }
 
+.eduTitle {
+	font-size: 16px;
+	font-weight: bold;
+}
+
 /* Infobox */
 
 .infobox {
     float: right;
     width: 1.7in;
-    background-color: #71b77b;
+    background-color: #99cca1;
     padding: 0.2in;
     text-align: center;
-    height: 7in;
-    border: 5px #71b77b solid;
+    height: 6in;
+    border: 5px #99cca1 solid;
 }
 
 .profileImg {
